@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: arial;
+    background-color: beige;
+}
+
+.header {
+    width: 100%;
+    height: 70vh;
+    background-image: url(/backgroung/tuseday/images/header1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.header h1,
+p {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    color: darkolivegreen;
+}
+
+.header h1 {
+    font-size: 40px;
+
+    text-shadow: 2px 4px darkslategrey;
+}
+
+.navbar {
+    display: flex;
+    background-color: #333;
+    margin-top: 5px;
+    position: sticky;
+    top: 2px;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar #icon {
+    display: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+.side {
+    flex: calc(20%-40px);
+    background-color: #f1f1f1;
+    padding: 20px;
+    height: auto;
+}
+
+.side h2 {
+    color: darkslategrey;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.side h5 {
+    color: darkslategrey;
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.side p {
+    color: darkslategrey;
+    position: inherit;
+    margin: 10px auto;
+
+}
+
+
+.side .simage img {
+    width: 100%;
+    padding: 20px;
+
+}
+
+.main {
+    flex: 77%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.main .aimg img {
+    width: 100%;
+
+    padding: 20px;
+}
+
+.main p {
+    color: darkslategrey;
+    text-align: justify;
+    padding: 20px;
+}
+
+.footer {
+    color: darkslategrey;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #f1f1f1;
+}
+
+
+
+
+@media screen and (max-width: 320px) {
+
+    .side .simg img {
+        text-align: left;
+        width: 200px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+        text-shadow: none;
+        text-decoration: double;
+        color: darkred;
+    }
+
+    .header p {
+        color: darkred;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .navbar {
+        flex-direction: column;
+
+
+
+    }
+
+    .navbar #icon {
+        display: inline-block;
+    }
+
+
+    #menu {
+        display: none;
+    }
+
+    .header {
+        background-size: cover;
+        overflow: hidden;
+    }
+
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row {
+        align-items: center;
+    }
+
+    .side {
+        width: 100%;
+    }
+
+    .side .simg {
+        text-align: center;
+
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    .side .simg {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    .main {
+        flex: 50%;
+    }
+
+    .side {
+        flex: 5%;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 1480px) {
+
+    .main {
+        flex: 70%;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+
+    .main {
+        flex: 60%;
+    }
+}
